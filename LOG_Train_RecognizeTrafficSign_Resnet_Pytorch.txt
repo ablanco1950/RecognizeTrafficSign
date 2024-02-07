@@ -1,0 +1,119 @@
+
+(alfonso1) c:\RecognizeTrafficSign>python Train_RecognizeTrafficSign_Resnet_Pytorch.py
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.  warnings.warn(
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+No. epochs: 1,             Training Loss: 2.493             Valid Loss: 1.919             Valid Accuracy: 0.432
+No. epochs: 1,             Training Loss: 3.756             Valid Loss: 1.438             Valid Accuracy: 0.576
+No. epochs: 1,             Training Loss: 4.607             Valid Loss: 0.812             Valid Accuracy: 0.726
+No. epochs: 1,             Training Loss: 5.244             Valid Loss: 0.794             Valid Accuracy: 0.764
+No. epochs: 1,             Training Loss: 5.745             Valid Loss: 0.588             Valid Accuracy: 0.813
+No. epochs: 2,             Training Loss: 0.194             Valid Loss: 0.271             Valid Accuracy: 0.909
+No. epochs: 2,             Training Loss: 0.45             Valid Loss: 0.235             Valid Accuracy: 0.92
+No. epochs: 2,             Training Loss: 0.682             Valid Loss: 0.206             Valid Accuracy: 0.929
+No. epochs: 2,             Training Loss: 0.912             Valid Loss: 0.193             Valid Accuracy: 0.934
+No. epochs: 2,             Training Loss: 1.127             Valid Loss: 0.187             Valid Accuracy: 0.936
+No. epochs: 3,             Training Loss: 0.067             Valid Loss: 0.178             Valid Accuracy: 0.939
+No. epochs: 3,             Training Loss: 0.251             Valid Loss: 0.171             Valid Accuracy: 0.944
+No. epochs: 3,             Training Loss: 0.433             Valid Loss: 0.175             Valid Accuracy: 0.941
+No. epochs: 3,             Training Loss: 0.622             Valid Loss: 0.169             Valid Accuracy: 0.943
+No. epochs: 3,             Training Loss: 0.786             Valid Loss: 0.171             Valid Accuracy: 0.945
+No. epochs: 3,             Training Loss: 0.965             Valid Loss: 0.164             Valid Accuracy: 0.945
+No. epochs: 4,             Training Loss: 0.165             Valid Loss: 0.17             Valid Accuracy: 0.942
+No. epochs: 4,             Training Loss: 0.346             Valid Loss: 0.172             Valid Accuracy: 0.943
+No. epochs: 4,             Training Loss: 0.532             Valid Loss: 0.164             Valid Accuracy: 0.946
+No. epochs: 4,             Training Loss: 0.712             Valid Loss: 0.163             Valid Accuracy: 0.945
+No. epochs: 4,             Training Loss: 0.873             Valid Loss: 0.167             Valid Accuracy: 0.941
+No. epochs: 5,             Training Loss: 0.106             Valid Loss: 0.168             Valid Accuracy: 0.943
+No. epochs: 5,             Training Loss: 0.282             Valid Loss: 0.167             Valid Accuracy: 0.942
+No. epochs: 5,             Training Loss: 0.456             Valid Loss: 0.17             Valid Accuracy: 0.942
+No. epochs: 5,             Training Loss: 0.638             Valid Loss: 0.169             Valid Accuracy: 0.943
+No. epochs: 5,             Training Loss: 0.82             Valid Loss: 0.163             Valid Accuracy: 0.946
+No. epochs: 6,             Training Loss: 0.043             Valid Loss: 0.167             Valid Accuracy: 0.943
+No. epochs: 6,             Training Loss: 0.216             Valid Loss: 0.168             Valid Accuracy: 0.941
+No. epochs: 6,             Training Loss: 0.392             Valid Loss: 0.168             Valid Accuracy: 0.946
+No. epochs: 6,             Training Loss: 0.572             Valid Loss: 0.164             Valid Accuracy: 0.945
+No. epochs: 6,             Training Loss: 0.754             Valid Loss: 0.17             Valid Accuracy: 0.942
+No. epochs: 6,             Training Loss: 0.926             Valid Loss: 0.168             Valid Accuracy: 0.945
+No. epochs: 7,             Training Loss: 0.165             Valid Loss: 0.169             Valid Accuracy: 0.942
+No. epochs: 7,             Training Loss: 0.344             Valid Loss: 0.165             Valid Accuracy: 0.946
+No. epochs: 7,             Training Loss: 0.528             Valid Loss: 0.171             Valid Accuracy: 0.942
+No. epochs: 7,             Training Loss: 0.705             Valid Loss: 0.164             Valid Accuracy: 0.946
+No. epochs: 7,             Training Loss: 0.887             Valid Loss: 0.163             Valid Accuracy: 0.946
+No. epochs: 8,             Training Loss: 0.095             Valid Loss: 0.165             Valid Accuracy: 0.945
+No. epochs: 8,             Training Loss: 0.271             Valid Loss: 0.168             Valid Accuracy: 0.944
+No. epochs: 8,             Training Loss: 0.448             Valid Loss: 0.167             Valid Accuracy: 0.942
+No. epochs: 8,             Training Loss: 0.634             Valid Loss: 0.165             Valid Accuracy: 0.944
+No. epochs: 8,             Training Loss: 0.814             Valid Loss: 0.161             Valid Accuracy: 0.946
+No. epochs: 9,             Training Loss: 0.039             Valid Loss: 0.168             Valid Accuracy: 0.942
+No. epochs: 9,             Training Loss: 0.216             Valid Loss: 0.171             Valid Accuracy: 0.941
+No. epochs: 9,             Training Loss: 0.394             Valid Loss: 0.17             Valid Accuracy: 0.943
+No. epochs: 9,             Training Loss: 0.579             Valid Loss: 0.167             Valid Accuracy: 0.944
+No. epochs: 9,             Training Loss: 0.765             Valid Loss: 0.168             Valid Accuracy: 0.944
+No. epochs: 9,             Training Loss: 0.947             Valid Loss: 0.168             Valid Accuracy: 0.944
+No. epochs: 10,             Training Loss: 0.152             Valid Loss: 0.163             Valid Accuracy: 0.945
+No. epochs: 10,             Training Loss: 0.328             Valid Loss: 0.167             Valid Accuracy: 0.941
+No. epochs: 10,             Training Loss: 0.508             Valid Loss: 0.17             Valid Accuracy: 0.941
+No. epochs: 10,             Training Loss: 0.684             Valid Loss: 0.162             Valid Accuracy: 0.946
+No. epochs: 10,             Training Loss: 0.867             Valid Loss: 0.164             Valid Accuracy: 0.944
+No. epochs: 11,             Training Loss: 0.084             Valid Loss: 0.169             Valid Accuracy: 0.943
+No. epochs: 11,             Training Loss: 0.27             Valid Loss: 0.167             Valid Accuracy: 0.944
+No. epochs: 11,             Training Loss: 0.447             Valid Loss: 0.159             Valid Accuracy: 0.946
+No. epochs: 11,             Training Loss: 0.626             Valid Loss: 0.168             Valid Accuracy: 0.944
+No. epochs: 11,             Training Loss: 0.797             Valid Loss: 0.169             Valid Accuracy: 0.944
+No. epochs: 12,             Training Loss: 0.03             Valid Loss: 0.163             Valid Accuracy: 0.946
+No. epochs: 12,             Training Loss: 0.211             Valid Loss: 0.161             Valid Accuracy: 0.946
+No. epochs: 12,             Training Loss: 0.4             Valid Loss: 0.168             Valid Accuracy: 0.941
+No. epochs: 12,             Training Loss: 0.58             Valid Loss: 0.169             Valid Accuracy: 0.944
+No. epochs: 12,             Training Loss: 0.761             Valid Loss: 0.164             Valid Accuracy: 0.944
+No. epochs: 12,             Training Loss: 0.931             Valid Loss: 0.17             Valid Accuracy: 0.943
+No. epochs: 13,             Training Loss: 0.148             Valid Loss: 0.167             Valid Accuracy: 0.945
+No. epochs: 13,             Training Loss: 0.326             Valid Loss: 0.164             Valid Accuracy: 0.947
+No. epochs: 13,             Training Loss: 0.502             Valid Loss: 0.166             Valid Accuracy: 0.946
+No. epochs: 13,             Training Loss: 0.677             Valid Loss: 0.17             Valid Accuracy: 0.943
+No. epochs: 13,             Training Loss: 0.856             Valid Loss: 0.168             Valid Accuracy: 0.946
+No. epochs: 14,             Training Loss: 0.083             Valid Loss: 0.162             Valid Accuracy: 0.947
+No. epochs: 14,             Training Loss: 0.25             Valid Loss: 0.169             Valid Accuracy: 0.944
+No. epochs: 14,             Training Loss: 0.428             Valid Loss: 0.169             Valid Accuracy: 0.943
+No. epochs: 14,             Training Loss: 0.616             Valid Loss: 0.169             Valid Accuracy: 0.943
+No. epochs: 14,             Training Loss: 0.798             Valid Loss: 0.166             Valid Accuracy: 0.944
+No. epochs: 15,             Training Loss: 0.016             Valid Loss: 0.164             Valid Accuracy: 0.946
+No. epochs: 15,             Training Loss: 0.197             Valid Loss: 0.167             Valid Accuracy: 0.944
+No. epochs: 15,             Training Loss: 0.368             Valid Loss: 0.165             Valid Accuracy: 0.946
+No. epochs: 15,             Training Loss: 0.546             Valid Loss: 0.168             Valid Accuracy: 0.943
+No. epochs: 15,             Training Loss: 0.739             Valid Loss: 0.169             Valid Accuracy: 0.943
+No. epochs: 15,             Training Loss: 0.91             Valid Loss: 0.167             Valid Accuracy: 0.944
+No. epochs: 16,             Training Loss: 0.124             Valid Loss: 0.164             Valid Accuracy: 0.945
+No. epochs: 16,             Training Loss: 0.316             Valid Loss: 0.166             Valid Accuracy: 0.945
+No. epochs: 16,             Training Loss: 0.495             Valid Loss: 0.167             Valid Accuracy: 0.944
+No. epochs: 16,             Training Loss: 0.675             Valid Loss: 0.166             Valid Accuracy: 0.942
+No. epochs: 16,             Training Loss: 0.849             Valid Loss: 0.168             Valid Accuracy: 0.943
+No. epochs: 17,             Training Loss: 0.07             Valid Loss: 0.165             Valid Accuracy: 0.944
+No. epochs: 17,             Training Loss: 0.25             Valid Loss: 0.174             Valid Accuracy: 0.941
+No. epochs: 17,             Training Loss: 0.424             Valid Loss: 0.164             Valid Accuracy: 0.945
+No. epochs: 17,             Training Loss: 0.594             Valid Loss: 0.166             Valid Accuracy: 0.946
+No. epochs: 17,             Training Loss: 0.766             Valid Loss: 0.17             Valid Accuracy: 0.944
+No. epochs: 18,             Training Loss: 0.01             Valid Loss: 0.163             Valid Accuracy: 0.945
+No. epochs: 18,             Training Loss: 0.186             Valid Loss: 0.166             Valid Accuracy: 0.945
+No. epochs: 18,             Training Loss: 0.37             Valid Loss: 0.164             Valid Accuracy: 0.945
+No. epochs: 18,             Training Loss: 0.543             Valid Loss: 0.163             Valid Accuracy: 0.943
+No. epochs: 18,             Training Loss: 0.713             Valid Loss: 0.17             Valid Accuracy: 0.943
+No. epochs: 18,             Training Loss: 0.899             Valid Loss: 0.16             Valid Accuracy: 0.948
+No. epochs: 19,             Training Loss: 0.119             Valid Loss: 0.165             Valid Accuracy: 0.946
+No. epochs: 19,             Training Loss: 0.293             Valid Loss: 0.171             Valid Accuracy: 0.943
+No. epochs: 19,             Training Loss: 0.48             Valid Loss: 0.166             Valid Accuracy: 0.946
+No. epochs: 19,             Training Loss: 0.658             Valid Loss: 0.162             Valid Accuracy: 0.946
+No. epochs: 19,             Training Loss: 0.848             Valid Loss: 0.165             Valid Accuracy: 0.945
+No. epochs: 20,             Training Loss: 0.064             Valid Loss: 0.166             Valid Accuracy: 0.944
+No. epochs: 20,             Training Loss: 0.255             Valid Loss: 0.17             Valid Accuracy: 0.942
+No. epochs: 20,             Training Loss: 0.431             Valid Loss: 0.159             Valid Accuracy: 0.945
+No. epochs: 20,             Training Loss: 0.604             Valid Loss: 0.167             Valid Accuracy: 0.945
+No. epochs: 20,             Training Loss: 0.789             Valid Loss: 0.173             Valid Accuracy: 0.942
+No. epochs: 20,             Training Loss: 0.962             Valid Loss: 0.171             Valid Accuracy: 0.943
+Test accuracy of model: 94.35%
+
+(alfonso1) c:\RecognizeTrafficSign>
