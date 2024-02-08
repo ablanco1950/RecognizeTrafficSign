@@ -6,7 +6,7 @@ As the results are not satisfactory for all traffic signs, it is combined with o
 
 In the images, the traffic signs are detected using the model generated at: https://github.com/ablanco1950/DetectTrafficSign before recognition.
 
-Creation of the necessary file structure from the dataset downloaded from https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign which is supposed to appear as archive (14).zip, once decompressed , execute:
+Creation of the necessary file structure from the dataset downloaded from https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign which is supposed to appear as archive (14).zip,(inn practice only 39,209 records can be downloaded for train and the decompressor seems to stop at the end). Once decompressed , execute:
 
 Create_DirTrafficSign_Resnet.py
 
