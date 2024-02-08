@@ -13,7 +13,7 @@ Created on Jan 2024
 dirVideo ="traffic-sign-to-test.mp4"
 
 #Downloaded from https://www.pexels.com/video/road-trip-4434242/
-dirVideo ="production_id_4434242 (2160p).mp4"
+#dirVideo ="production_id_4434242 (2160p).mp4"
 #dirVideo="production_id_4606790 (2160p).mp4"
 
 #dirnameYolo="runs\\detect\\train2\\weights\\best.pt"
