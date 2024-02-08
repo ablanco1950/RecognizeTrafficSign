@@ -68,8 +68,7 @@ import cv2
 import time
 
 TimeIni=time.time()
-# in  14 minutes = 800 seconds finish  
-TimeLimit=1000
+
 
 
 # https://docs.ultralytics.com/python/
@@ -381,4 +380,4 @@ for i in range (len(imagesComplete)):
               
 print("")           
 
-print( " Time in seconds "+ str(time.time()-Ini))
+print( " Time in seconds "+ str(time.time()-TimeIni))
