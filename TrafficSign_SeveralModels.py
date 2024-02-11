@@ -124,7 +124,9 @@ from keras.models import Sequential, load_model
 # Downloaded from https://github.com/faeya/traffic-sign-classification
 modelTrafficSignRecognition=load_model('traffic_classifier.h5')
 
-
+# downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition
+# 
+modelTrafficSignRecognition=load_model('model.h5')
 def process_image(image,  option_transform):
     
     # Process a PIL image for use in a PyTorch model
@@ -210,7 +212,10 @@ def ProcessTrafficSign_SeveralModels(gray1):
 
                 else:
                         data=[]
-                        SignalToRecognize=cv2.resize(gray1,(30,30))
+                        # for trafficclasifier
+                        #SignalToRecognize=cv2.resize(gray1,(30,30))
+                        # for https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition
+                        SignalToRecognize=cv2.resize(gray1,(32,32))
                         data.append(np.array(SignalToRecognize))
                         X_test=np.array(data)
                         predict_x=modelTrafficSignRecognition.predict(X_test) 
