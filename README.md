@@ -55,7 +55,7 @@ The result is that the model seems to recognize the signals well:
 
    'Stop' ,'No passing' ,'Yield' , 'Bumpy road' ,'Turn right ahead' , 'Keep right' and 'No entry'
 
-On the other hand, in the project https://github.com/faeya/traffic-sign-classification using the traffic_classifier.h5 model (you have to download it from the project). It is noted that the speed limit and 'Bicycles crossing' signs are well recognized.
+On the other hand, in the project https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition using the model.h5 model (you have to download it from the project). It is noted that the speed limit and 'Bicycles crossing' signs are well recognized.
 
 That is, even using the same training data, depending on the model, some signals or others are better recognized.
 
