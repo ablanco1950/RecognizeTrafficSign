@@ -7,7 +7,7 @@ In the images, the traffic signs are detected using the model generated at: http
 
 Model resnet pytorch has been chosen due to the good results it provided in the project https://github.com/ablanco1950/CarsModels_Resnet_Pytorch
 
-Creation of the necessary file structure from the dataset downloaded from https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign which is supposed to appear as archive (14).zip,(inn practice only 39,209 records can be downloaded for train and the decompressor seems to stop at the end). Once decompressed , execute:
+Creation of the necessary file structure from the dataset downloaded from https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign which is supposed to appear as archive (14).zip,(in practice only 39,209 records can be downloaded for train and the decompressor seems to stop at the end). Once decompressed , execute:
 
 Create_DirTrafficSign_Resnet.py
 
