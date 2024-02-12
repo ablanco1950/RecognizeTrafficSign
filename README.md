@@ -52,6 +52,6 @@ Using the model downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs
 
 RecognizetTrafficSignDetectedAvishkaSandeepa.py
 
-appears errors in sgnals in images:00011.jpg, 00012.jpg, 00017.jpg, 00019.jpg y 00025.jpg
+appears errors in signals in images:00011.jpg, 00012.jpg, 00017.jpg, 00019.jpg y 00025.jpg
 
 
