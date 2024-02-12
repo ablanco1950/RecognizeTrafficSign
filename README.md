@@ -48,7 +48,7 @@ RecognizetTrafficSign120x120_10epoch_Detected_yolo_resnet_pytorch.py
 The detected signals are presented and the recognized name of the detected signal is displayed on the console and at the end of the detected signals in each image, the image with the detected and recognized images.
 There are errors in any signal in images: 00009.jpg, 00011.jpg and 00022.jpg
 
-Using the model downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition and testing wit the same images by executing :
+Using the model (model.h5) downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition and testing with the same images by executing :
 
 RecognizetTrafficSignDetectedAvishkaSandeepa.py
 
