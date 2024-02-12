@@ -40,37 +40,19 @@ Guess120x120TrafficSign_Resnet_Pytorch.py
 
 which would give a success rate of 99.43502824858757%
 
-Next, it is tested with a series of photos that appear in the Test2 folder and using the one obtained in the project as a traffic sign detector:
-
-https://github.com/ablanco1950/DetectTrafficSign
-
+Next, it is tested with a series of photos that appear in the Test2 folder ( formed with th first 30 images from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data.
 
 running:
 
-RecognizetTrafficSignDetected_yolo_resnet_pytorch.py
+RecognizetTrafficSign120x120_10epoch_Detected_yolo_resnet_pytorch.py
 
 The detected signals are presented and the recognized name of the detected signal is displayed on the console and at the end of the detected signals in each image, the image with the detected and recognized images.
+There are errors in any signal in images: 00009.jpg, 00011.jpg and 00022.jpg
 
-The result is that the model seems to recognize the signals well:
+Using the model downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition and testing wit the same images by executing :
 
-   'Stop' ,'No passing' ,'Yield' , 'Bumpy road' ,'Turn right ahead' , 'Keep right' and 'No entry'
+RecognizetTrafficSignDetectedAvishkaSandeepa.py
 
-On the other hand, in the project https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition using the model.h5 model (you have to download it from the project). It is noted that the speed limit and 'Bicycles crossing' signs are well recognized.
-
-That is, even using the same training data, depending on the model, some signals or others are better recognized.
-
-Even using the same resnet pytorch model and generating the checkpoint20x20_7epoch.pht model, after executing:
-
-Train20x20_RecognizeTrafficSign_Resnet_Pytorch.py it is verified that with the same model and train base, changing only the epoch and the dimension of the box, it is possible to correctly identify the Roundabout mandatory sign.
-
-The different models are combined and improved recognition is obtained, running
+appears errors in images:00011.jpg, 00012.jpg, 00017.jpg, 00019.jpg y 00025.jpg
 
 
-RecognizetTrafficSign_SeveralModels.py
-
-
-and the video version
-
-VIDEORecognizeTrafficSign_SeveralModels.py
-
-It is expected to incorporate more models that allow improving this image recognition.
