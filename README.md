@@ -20,27 +20,27 @@ Fill_DirTrafficSign_Resnet.py
 
 Train the model by running:
 
-Train_RecognizeTrafficSign_Resnet_Pytorch.py
+Train120x120_RecognizeTrafficSign_Resnet_Pytorch.py
 
-which produces the checkpoint20epoch.pth model, due to its size I have not been able to upload it to github.
+which produces the checkpoint120x120_10epoch.pth model, due to its size I have not been able to upload it to github.
 
   The log of this training is attached in
 
-  LOG_Train_RecognizeTrafficSign_Resnet_Pytorch.txt
+  LOG_Train120x120_10epoch.txt
 
 in which it is indicated:
 
-Test accuracy of model: 94.35%
+Test accuracy of model: 99.435%
 
 which is far from the results when applied in real cases.
 
 You can then execute:
 
-GuessTrafficSign_Resnet_Pytorch.py
+Guess120x120TrafficSign_Resnet_Pytorch.py
 
-  which would give a success rate of 98.3%
+which would give a success rate of 99.43502824858757%
 
-Next, it is tested with a series of photos that appear in the Test folder and using the one obtained in the project as a traffic sign detector:
+Next, it is tested with a series of photos that appear in the Test2 folder and using the one obtained in the project as a traffic sign detector:
 
 https://github.com/ablanco1950/DetectTrafficSign
 
