@@ -54,4 +54,6 @@ RecognizetTrafficSignDetectedAvishkaSandeepa.py
 
 appears errors in signals in images:00011.jpg, 00012.jpg, 00017.jpg, 00019.jpg y 00025.jpg
 
+Observation:
+The results when images with the same characteristics as those downloaded from are not used are much worse and differ depending on the model or within each train of the same model according to the epoch used. Therefore, it would be necessary to use a specific model for each signal or group of signals, which would complicate the treatment, or an ignored treatment of the images so that they had the same characteristics as those downloaded from
 
