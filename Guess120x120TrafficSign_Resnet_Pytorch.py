@@ -93,7 +93,7 @@ def load_checkpoint(filepath):
 model_path= "checkpoint120x120_10epoch.pth"
 
 
-model = load_checkpoint('checkpoint20epoch.pth')
+model = load_checkpoint('checkpoint120x120_10epoch.pth')
 # Checking model i.e. should have 196 output units in the classifier
 #print(model)
 #DataPath='C:\\archiveKaggle\\cars_train\\cars_train' + '\\'
