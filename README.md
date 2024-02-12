@@ -2,7 +2,6 @@
 
 From traffic sign database downloaded from https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
 It is produced, using a CNN based on resnet and pytorch, a model to recognize traffic signs.
-As the results are not satisfactory for all traffic signs, it is combined with other models by varying the model parameters or using other CNN models.
 
 In the images, the traffic signs are detected using the model generated at: https://github.com/ablanco1950/DetectTrafficSign before recognition.
 
