@@ -56,5 +56,5 @@ appears errors in signals in images:00011.jpg, 00012.jpg, 00017.jpg, 00019.jpg y
 
 Observation:
 
-The results with images with distinct features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data are  worse and differ depending on the model was trained. or if with  the same model with different epoch used. Therefore, it would be necessary to use a specific model for each signal or group of signals, which would complicate the treatment or, with an ignored treatment of the images so that they had the same features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data
+The results with images with distinct features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data are  worse and differ depending on the model was trained. Or if with  the same model with the number of epoch used. Therefore, it would be necessary to use a specific model for each signal or group of signals, which would complicate the treatment or, with an ignored treatment of the images so that they had the same features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data
 
