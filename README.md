@@ -21,7 +21,7 @@ Train the model by running:
 
 Train120x120_RecognizeTrafficSign_Resnet_Pytorch.py
 
-which produces the checkpoint120x120_10epoch.pth model, due to its size I have not been able to upload it to github.
+which produces the checkpoint120x120_10epoch.pth model, due to its size, i have not been able to upload it to github.
 
   The log of this training is attached in
 
@@ -39,7 +39,7 @@ Guess120x120TrafficSign_Resnet_Pytorch.py
 
 which would give a success rate of 99.43502824858757%
 
-Next, it is tested with a series of photos that appear in the Test2 folder ( formed with th first 30 images from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data.
+Next, it is tested with a series of photos that appear in the Test2 folder ( formed with the first 30 images from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data.
 
 running:
 
