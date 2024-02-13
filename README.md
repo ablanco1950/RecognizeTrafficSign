@@ -39,9 +39,11 @@ Guess120x120TrafficSign_Resnet_Pytorch.py
 
 which would give a success rate of 99.43502824858757%
 
-Next, it is tested with a series of photos that appear in the Test2 folder ( formed with the first 30 images from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data.
+Next, it is tested with a series of photos that appear in the Test2 folder ( formed with the first 30 images from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data.)
 
-running:
+ (the attached Test2.zip folder must be decompressed and you must ensure that there is only one Test2 folder and not 2 nested ones as the decompressor usually does)
+
+Execute:
 
 RecognizetTrafficSign120x120_10epoch_Detected_yolo_resnet_pytorch.py
 
