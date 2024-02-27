@@ -19,23 +19,21 @@ Fill_DirTrafficSign_Resnet.py
 
 Train the model by running:
 
-Train120x120_RecognizeTrafficSign_Resnet_Pytorch.py
+Train224x224_RecognizeTrafficSign_Resnet_Pytorch.py
 
-which produces the checkpoint120x120_10epoch.pth model, due to its size, i have not been able to upload it to github.
+which produces the checkpoint224x224_3epoch.pth model, due to its size, i have not been able to upload it to github.
 
-  The log of this training is attached in
+The log of this training is attached in
 
-  LOG_Train120x120_10epoch.txt
+  LOG_Train224x224_3epoch.txt
 
 in which it is indicated:
 
-Test accuracy of model: 99.435%
-
-which is far from the results when applied in real cases.
+Test accuracy of model: 98.875%
 
 You can then execute:
 
-Guess120x120TrafficSign_Resnet_Pytorch.py
+Guess224x224TrafficSign_Resnet_Pytorch.py
 
 which would give a success rate of 99.43502824858757%
 
@@ -45,7 +43,7 @@ Next, it is tested with a series of photos that appear in the Test2 folder ( for
 
 Execute:
 
-RecognizetTrafficSign120x120_10epoch_Detected_yolo_resnet_pytorch.py
+RecognizetTrafficSign224x224_3epoch_Detected_yolo_resnet_pytorch.py
 
 The detected signals are presented and the recognized name of the detected signal is displayed on the console and at the end of the detected signals in each image, the image with the detected and recognized images.
 There are errors in any signal in images: 00009.jpg, 00011.jpg and 00022.jpg
@@ -58,5 +56,9 @@ appears errors in signals in images:00011.jpg, 00012.jpg, 00017.jpg, 00019.jpg y
 
 Observation:
 
-The results with images with distinct features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data are  worst and differ depending on the model was trained. Or if with  the same model with the number of epoch used. Therefore, it would be necessary to use a specific model for each signal or group of signals, which would complicate the treatment or, with an ignored treatment of the images so that they had the same features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data
+The results with images with distinct features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data are  worst and differ depending on the model was trained.
+
+For example testing the images in Test1 folder (attched in this project)
+
+Or if with  the same model with the number of epoch used. Therefore, it would be necessary to use a specific model for each signal or group of signals, which would complicate the treatment or, with an ignored treatment of the images so that they had the same features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data
 
