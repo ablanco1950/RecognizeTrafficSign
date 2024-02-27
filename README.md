@@ -25,7 +25,7 @@ which produces the checkpoint224x224_3epoch.pth model, due to its size, i have n
 
 The log of this training is attached in
 
-  LOG_Train224x224_3epoch.txt
+ LOG_Train224x224_3epoch.txt
 
 in which it is indicated:
 
@@ -58,7 +58,11 @@ Observation:
 
 The results with images with distinct features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data are  worst and differ depending on the model was trained.
 
-For example testing the images in Test1 folder (attched in this project)
+For example testing the images in Test1 folder (attched in this project) by changing in  11 line of RecognizetTrafficSign224x224_3epoch_Detected_yolo_resnet_pytorch.py Test2 by Test1, the results are worst.
 
-Or if with  the same model with the number of epoch used. Therefore, it would be necessary to use a specific model for each signal or group of signals, which would complicate the treatment or, with an ignored treatment of the images so that they had the same features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data
+After seen that  (model.h5) downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition is better recognizinf speed limits   signals, is created :
+
+RecognizetTrafficSign_SeveralModels.py 
+
+that uses the two models: model.h5 and checkpoint224x224_3epoch.pth getting the best accuracy
 
