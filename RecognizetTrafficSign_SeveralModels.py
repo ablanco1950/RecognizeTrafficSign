@@ -8,7 +8,7 @@ Created on feb 2024
 # PARAMETERS
 ######################################################################
 dir=""
-dirname= "Test"
+dirname= "Test6"
 #dirnameYolo="runs\\detect\\train2\\weights\\best.pt"
 dirnameYolo="bestDetectTrafficSign.pt"
 
@@ -149,7 +149,7 @@ for i in range (len(imagesComplete)):
                 color=(0,0,255)
                 # Using cv2.rectangle() method
                 # Draw a rectangle with blue line borders of thickness of 5 px
-                img = cv2.rectangle(gray, start_point, end_point,(255,0,0), 15)
+                img = cv2.rectangle(gray, start_point, end_point,(255,0,0), 5)
                 # Put text
                 text_location = (x[z], y[z])
                 text_color = (255,255,255)

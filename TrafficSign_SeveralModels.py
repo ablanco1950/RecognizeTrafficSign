@@ -116,13 +116,14 @@ def load_checkpoint(filepath):
     
     return model
 
-model_path= "checkpoint20epoch.pth"
-model_path60x60="checkpoint60x60_20epoch.pth"
-model_path20x20="checkpoint20x20_7epoch.pth"
+#model_path= "checkpoint20epoch.pth"
+#model_path60x60="checkpoint60x60_20epoch.pth"
+#model_path20x20="checkpoint20x20_7epoch.pth"
+model_path= "checkpoint224x224_3epoch.pth"
 
 from keras.models import Sequential, load_model
 # Downloaded from https://github.com/faeya/traffic-sign-classification
-modelTrafficSignRecognition=load_model('traffic_classifier.h5')
+#modelTrafficSignRecognition=load_model('traffic_classifier.h5')
 
 # downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition
 # 
@@ -134,10 +135,11 @@ def process_image(image,  option_transform):
     # Converting image to PIL image using image file path
     pil_im = Image.open(f'{image}')
 
-    transform = transforms.Compose([transforms.Resize((30,30)),
-                                            transforms.CenterCrop(30),
+    transform = transforms.Compose([transforms.Resize((224,224)),
+                                            transforms.CenterCrop(224),
                                             transforms.ToTensor(),
                                             transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+    """ 
     if  option_transform==1:
         
         transform = transforms.Compose([transforms.Resize((20,20)),
@@ -145,7 +147,7 @@ def process_image(image,  option_transform):
                                             transforms.ToTensor(),
                                           transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
         
-      
+    """  
 
 
     # Transforming image for use with network
@@ -186,10 +188,55 @@ def predict_TrafficSign(image_path, model, topk,  option_transform):
     #return probs_top_list, index_top_list
     return conf, predicted
 
+def PredictAvishkaSandeepa(gray1):
+                data=[]
+                # for trafficclasifier
+                #SignalToRecognize=cv2.resize(gray1,(30,30))
+                # for https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition
+                SignalToRecognize=cv2.resize(gray1,(32,32))
+                data.append(np.array(SignalToRecognize))
+                X_test=np.array(data)
+                predict_x=modelTrafficSignRecognition.predict(X_test) 
+                classes_x=np.argmax(predict_x,axis=1)
+                NameTrafficSignPredicted_model2=str(classes[int(classes_x)+1])
+                return NameTrafficSignPredicted_model2
+
 def ProcessTrafficSign_SeveralModels(gray1):
                 topk=5
                 NameTrafficSignPredicted=""
                 cv2.imwrite("pp.jpg",gray1)
+                option_transform=0
+                conf1, predicted1=predict_TrafficSign("pp.jpg", model_path, topk,  option_transform)
+                #NameTrafficSignPredicted_model1=TabTrafficSign[predicted1[0]]+ " "+ str(conf)
+                NameTrafficSignPredicted_model1=TabTrafficSign[predicted1[0]]
+                # in signals speed limit PredictAvishkaSandeepa has more accuracy
+                if NameTrafficSignPredicted_model1 == 'Speed limit (20km/h)':
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                elif NameTrafficSignPredicted_model1 == 'Speed limit (30km/h)':
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                elif   NameTrafficSignPredicted_model1 =='Speed limit (50km/h)':
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                elif  NameTrafficSignPredicted_model1 =='Speed limit (60km/h)':
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)                   
+                elif   NameTrafficSignPredicted_model1 =='Speed limit (70km/h)' :                        
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                elif   NameTrafficSignPredicted_model1 =='Speed limit (80km/h)' :                        
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+               
+                elif   NameTrafficSignPredicted_model1 =='End of speed limit (80km/h)' :                        
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                elif   NameTrafficSignPredicted_model1 =='Speed limit (100km/h)' :                        
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                          
+                elif   NameTrafficSignPredicted_model1 =='Speed limit (100km/h)' :                        
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                          
+                elif   NameTrafficSignPredicted_model1 == 'Speed limit (120km/h)' :
+                          NameTrafficSignPredicted=PredictAvishkaSandeepa(gray1)
+                else:
+                      NameTrafficSignPredicted=NameTrafficSignPredicted_model1
+
+                """
                 option_transform=1
                 conf0, predicted0=predict_TrafficSign("pp.jpg", model_path20x20, topk,option_transform)
                 #NameTrafficSignPredicted_model1=TabTrafficSign[predicted1[0]]+ " "+ str(conf)
@@ -239,6 +286,6 @@ def ProcessTrafficSign_SeveralModels(gray1):
                         
                         if   NameTrafficSignPredicted_model2 == 'Bicycles crossing' :
                                     NameTrafficSignPredicted=NameTrafficSignPredicted_model2
-                
+                """
                 return NameTrafficSignPredicted
                  
