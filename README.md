@@ -58,9 +58,9 @@ Observation:
 
 The results with images with distinct features as those downloaded from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data are  worst and differ depending on the model was trained.
 
-For example testing the images in Test1 folder (attched in this project) by changing in  11 line of RecognizetTrafficSign224x224_3epoch_Detected_yolo_resnet_pytorch.py Test2 by Test1, the results are worst.
+For example testing the images in Test folder (attched compressed  in this project) by changing in  11 line of RecognizetTrafficSign224x224_3epoch_Detected_yolo_resnet_pytorch.py Test2 by Test, the results are worst. The same in RecognizetTrafficSignDetectedAvishkaSandeepa.py
 
-After seen that  (model.h5) downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition is better recognizinf speed limits   signals, is created :
+After seen that  (model.h5) downloaded from https://github.com/AvishkaSandeepa/Traffic-Signs-Recognition is better recognizing speed limits   signals and in the rest is better checkpoint224x224_3epoch.pth, is created :
 
 RecognizetTrafficSign_SeveralModels.py 
 
