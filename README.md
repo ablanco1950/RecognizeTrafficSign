@@ -35,7 +35,7 @@ You can then execute:
 
 Guess224x224TrafficSign_Resnet_Pytorch.py
 
-which would give a success rate of 99.43502824858757%
+which would give a success rate of 100% (only 177 images tested)
 
 Next, it is tested with a series of photos that appear in the Test2 folder ( formed with the first 30 images from https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format/data.)
 
