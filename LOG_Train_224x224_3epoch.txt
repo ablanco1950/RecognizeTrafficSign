@@ -1,0 +1,27 @@
+(alfonso1) c:\RecognizeTrafficSign>python Train224x224_RecognizeTrafficSign_Resnet_Pytorch.py
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.  warnings.warn(
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+No. epochs: 1,             Training Loss: 2.058             Valid Loss: 0.914             Valid Accuracy: 0.746
+No. epochs: 1,             Training Loss: 2.472             Valid Loss: 0.286             Valid Accuracy: 0.912
+No. epochs: 1,             Training Loss: 2.628             Valid Loss: 0.265             Valid Accuracy: 0.919
+No. epochs: 1,             Training Loss: 2.735             Valid Loss: 0.127             Valid Accuracy: 0.957
+No. epochs: 1,             Training Loss: 2.827             Valid Loss: 0.102             Valid Accuracy: 0.966
+No. epochs: 2,             Training Loss: 0.03             Valid Loss: 0.053             Valid Accuracy: 0.982
+No. epochs: 2,             Training Loss: 0.076             Valid Loss: 0.045             Valid Accuracy: 0.986
+No. epochs: 2,             Training Loss: 0.115             Valid Loss: 0.042             Valid Accuracy: 0.987
+No. epochs: 2,             Training Loss: 0.152             Valid Loss: 0.037             Valid Accuracy: 0.989
+No. epochs: 2,             Training Loss: 0.188             Valid Loss: 0.039             Valid Accuracy: 0.988
+No. epochs: 3,             Training Loss: 0.01             Valid Loss: 0.039             Valid Accuracy: 0.989
+No. epochs: 3,             Training Loss: 0.042             Valid Loss: 0.038             Valid Accuracy: 0.988
+No. epochs: 3,             Training Loss: 0.075             Valid Loss: 0.039             Valid Accuracy: 0.988
+No. epochs: 3,             Training Loss: 0.111             Valid Loss: 0.038             Valid Accuracy: 0.988
+No. epochs: 3,             Training Loss: 0.143             Valid Loss: 0.038             Valid Accuracy: 0.988
+No. epochs: 3,             Training Loss: 0.177             Valid Loss: 0.037             Valid Accuracy: 0.989
+Test accuracy of model: 98.87%
+
+(alfonso1) c:\RecognizeTrafficSign>
