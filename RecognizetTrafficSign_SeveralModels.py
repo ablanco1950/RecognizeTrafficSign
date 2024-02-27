@@ -8,7 +8,7 @@ Created on feb 2024
 # PARAMETERS
 ######################################################################
 dir=""
-dirname= "Test6"
+dirname= "Test2"
 #dirnameYolo="runs\\detect\\train2\\weights\\best.pt"
 dirnameYolo="bestDetectTrafficSign.pt"
 
